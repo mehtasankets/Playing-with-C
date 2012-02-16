@@ -1,0 +1,21 @@
+1> Static variable : The variable which gets defined when encountered for the 1st time and next time onwards same variable is used. 
+
+void a()
+{
+	static int s = 0;
+	printf("S:%d\n",s++);
+}
+
+2> Volatile variable : The variable which doesn't allow compiler to optimize the variable in any sense.
+
+3> Global variable : Variable declared outside any blog is called global as it is accessible from anywhere in the file.
+
+4> Constant : using keyword const, It is not allowed to change the value of const variable. But using address and pointers we can change its value. for e.g. 
+
+	const int a =0;
+	int *p = &a;
+	*p = 123;
+
+5> Register variable : If we use register keyword before variable, it tells compiler to access the variable as quickly as possible. Variable value is stored in CPU register which provides max. speed.
+
+
